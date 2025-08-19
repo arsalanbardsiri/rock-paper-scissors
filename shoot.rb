@@ -27,11 +27,11 @@ THE_SCISSORS = "
 OPTIONS = { :rock => THE_ROCK, :paper => THE_PAPER, :scissors => THE_SCISSORS }
 
 class Game
-  attr_accessor :choice #, :score
+  attr_accessor :choice, :score
 
   def initialize
     self.choice = ""
-    #self.score = 0
+    self.score = 0
   end
 
   def shoot
@@ -40,9 +40,14 @@ class Game
       puts "Please please choose from, 'Rock, Paper, Scissors'"
       @choice = gets.chomp.downcase
     end
+    return @choice
   end
 
-  #   def win
-  #     @score += 1
-  #   end
+  def win
+    @score += 1
+  end
+
+  def score
+    return @score
+  end
 end
