@@ -8,12 +8,16 @@ puts "WELCOME To The Game of
 ---.__(___)           ---.__________)             ---.__(___)
 Rock                  Paper                       Scissors"
 require "./game_play.rb"
+puts "Choose game mode: '1' for 2-Player, '2' for vs Computer"
+mode = gets.chomp
+vs_computer = (mode == "2")
+
 player_1 = Game.new
 player_2 = Game.new
 
 game_on = true
 while game_on
-  check_winner(player_1, player_2)
+  check_winner(player_1, player_2, vs_computer: vs_computer)
 
   puts "Play again? Enter 'P' to play or 'Q' to quit:"
   replay = gets.chomp.downcase
@@ -23,10 +27,10 @@ while game_on
     replay = gets.chomp.downcase
   end
 
-  replay == "q" ? game_on = false : game_on = true
+  game_on = replay != "q"
 end
 
 puts "Thanks for playing!"
 puts "Final Scores:"
 puts "Player 1: #{player_1.score}"
-puts "Player 2: #{player_2.score}"
+puts "#{vs_computer ? "Computer" : "Player 2"}: #{player_2.score}"

@@ -44,6 +44,13 @@ class Game
     @choice
   end
 
+  def shoot_computer
+    options = OPTIONS.keys.map { |key| key.to_s }
+    @choice = options.sample
+    puts "Computer chose: #{@choice.capitalize}"
+    @choice
+  end
+
   def win
     @score += 1
   end
