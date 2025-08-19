@@ -1,5 +1,4 @@
 #app.rb
-require "./shoot.rb"
 puts "WELCOME To The Game of 
     _______               _______                     _______
 ---'   ____)         ---'    ____)____            ---'   ____)____
