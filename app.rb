@@ -1,4 +1,4 @@
-require "./select.rb"
+require_relative "select"
 puts "WELCOME To The Game of 
     _______               _______                     _______
 ---'   ____)         ---'    ____)____            ---'   ____)____
@@ -7,7 +7,7 @@ puts "WELCOME To The Game of
       (____)                  _______)                  (____)
 ---.__(___)           ---.__________)             ---.__(___)
 Rock                  Paper                       Scissors"
-require "./game_play.rb"
+require_relative "game_play"
 puts "Choose game mode: '1' for 2-Player, '2' for vs Computer"
 mode = gets.chomp
 vs_computer = (mode == "2")

@@ -1,4 +1,4 @@
-require "./select.rb"
+require_relative "select"
 
 POSSIBILITIES = { "rock" => "scissors", "scissors" => "paper", "paper" => "rock" }
 VS = "
