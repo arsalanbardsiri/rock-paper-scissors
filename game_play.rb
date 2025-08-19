@@ -1,5 +1,4 @@
-#pvp.rb
-require "./shoot.rb"
+require "./select.rb"
 POSSIBILITIES = { "rock" => "scissors", "scissors" => "paper", "paper" => "rock" }
 VS = "
  _   _  ___   
@@ -9,9 +8,6 @@ VS = "
 | \_/ |( )_) |
 `\___/'`\____)
 "
-player_1 = Game.new
-player_2 = Game.new
-
 =begin
 Value system
 R > S
@@ -28,21 +24,22 @@ def check_winner(player_1, player_2)
   puts "Player 2:"
   player_2_choice = player_2.shoot
   if player_1_choice == player_2_choice
-    pp "Tie!"
+    result = "Tie!"
   elsif POSSIBILITIES[player_1_choice] == player_2_choice
-    pp "Player 1 wins"
+    result = "Player 1 wins"
     player_1.win
   else
-    pp "Player 2 wins"
+    result = "Player 2 wins"
     player_2.win
   end
   puts "
+  Player1:
   #{OPTIONS[player_1_choice.to_sym]} 
-  #{VS} 
+  #{VS}
+  Player 2: 
   #{OPTIONS[player_2_choice.to_sym]}
-  "
 
-  pp "P1 Score: #{player_1.score}, P2 Score: #{player_2.score}"
+  #{result}
+  
+  Player1 Score: #{player_1.score}, Player 2 Score: #{player_2.score}"
 end
-
-check_winner(player_1, player_2)

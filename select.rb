@@ -1,4 +1,3 @@
-#shoot.rb
 #Ascii art from https://gist.github.com/wynand1004/b5c521ea8392e9c6bfe101b025c39abe
 THE_ROCK = "
     _______
@@ -36,18 +35,16 @@ class Game
 
   def shoot
     options = OPTIONS.keys.map { |key| key.to_s }
+
+    @choice = ""
     while !options.include?(@choice)
-      puts "Please please choose from, 'Rock, Paper, Scissors'"
+      puts "Please choose from, 'Rock, Paper, Scissors'"
       @choice = gets.chomp.downcase
     end
-    return @choice
+    @choice
   end
 
   def win
     @score += 1
-  end
-
-  def score
-    return @score
   end
 end
