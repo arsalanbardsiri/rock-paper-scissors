@@ -1,5 +1,12 @@
 #pvp.rb
 require "./shoot.rb"
 
-c = Choose.new
-c.shoot
+puts "Player 1:"
+
+p1 = Choose.new
+p1_choice = p1.shoot
+
+puts "Player 2:"
+
+p2 = Choose.new
+p2_choice = p2.shoot
