@@ -1,4 +1,11 @@
 #app.rb
 require "./shoot.rb"
-puts "WELCOME To The Game of #{THE_ROCK} #{THE_PAPER} #{THE_SCISSORS}"
+puts "WELCOME To The Game of 
+    _______               _______                     _______
+---'   ____)         ---'    ____)____            ---'   ____)____
+      (_____)                   ______)                     ______)
+      (_____)                  _______)                 __________)
+      (____)                  _______)                  (____)
+---.__(___)           ---.__________)             ---.__(___)
+Rock                  Paper                       Scissors"
 require "./pvp.rb"
