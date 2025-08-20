@@ -104,6 +104,3 @@ rock-paper-scissors/
 ## Author
 
 **Arsalan Bardsiri**
-
-#TODO:
-Looks good Arsalan. For a reach goal, try refactoring app.rb and game_play.rb logic in to classes. Maybe app.rp could just have 1 line (eg Game.new.run).
