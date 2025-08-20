@@ -2,12 +2,13 @@ require_relative "select"
 require_relative "ascii"
 puts "WELCOME To The Game of #{R_P_S}"
 require_relative "game_play"
+
 puts "Choose game mode: '1' for 2-Player, '2' for vs Computer"
 mode = gets.chomp
 vs_computer = (mode == "2")
 
-player_1 = Game.new
-player_2 = Game.new
+player_1 = Select.new
+player_2 = Select.new
 
 game_on = true
 while game_on

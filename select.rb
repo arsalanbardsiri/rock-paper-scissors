@@ -2,7 +2,7 @@ require_relative "ascii"
 
 OPTIONS = { :rock => THE_ROCK, :paper => THE_PAPER, :scissors => THE_SCISSORS }
 
-class Game
+class Select
   attr_accessor :choice, :score
 
   def initialize

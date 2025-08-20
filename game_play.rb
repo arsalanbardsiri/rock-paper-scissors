@@ -1,6 +1,5 @@
 require_relative "select"
 require_relative "ascii"
-POSSIBILITIES = { "rock" => "scissors", "scissors" => "paper", "paper" => "rock" }
 
 =begin
 Value system
@@ -11,6 +10,23 @@ P > R
 TODO:
 Therefore need a score tracking system
 =end
+POSSIBILITIES = { "rock" => "scissors", "scissors" => "paper", "paper" => "rock" }
+
+class Game
+  attr_accessor :player_1, :player_2
+
+  def aquire_choice
+    #code
+  end
+
+  def evaluate_choices
+    #code
+  end
+
+  def evaluation_result
+    #code
+  end
+end
 
 def check_winner(player_1, player_2, vs_computer: false)
   puts "Player 1:"
