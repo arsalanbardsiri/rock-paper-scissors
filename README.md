@@ -98,7 +98,6 @@ rock-paper-scissors/
 
 - Add more game modes or best-of series.
 - Improve input validation for case-insensitive input.
-- Add a functional_spec.md to outline user stories and functional requirements.
 
 ---
 
