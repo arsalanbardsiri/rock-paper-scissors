@@ -84,6 +84,7 @@ rock-paper-scissors/
 ├── app.rb           # Main CLI game loop
 ├── game_play.rb     # Game logic, winner checking
 ├── select.rb        # Game constants and Game class
+├── ascii.rb        # Acsii arts
 ├── test/            # MiniTest test files
 │   └── test_game.rb
 ├── Gemfile
