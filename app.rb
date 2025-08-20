@@ -1,12 +1,6 @@
 require_relative "select"
-puts "WELCOME To The Game of 
-    _______               _______                     _______
----'   ____)         ---'    ____)____            ---'   ____)____
-      (_____)                   ______)                     ______)
-      (_____)                  _______)                 __________)
-      (____)                  _______)                  (____)
----.__(___)           ---.__________)             ---.__(___)
-Rock                  Paper                       Scissors"
+require_relative "ascii"
+puts "WELCOME To The Game of #{R_P_S}"
 require_relative "game_play"
 puts "Choose game mode: '1' for 2-Player, '2' for vs Computer"
 mode = gets.chomp

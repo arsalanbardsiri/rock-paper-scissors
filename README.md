@@ -6,14 +6,15 @@ A simple command-line interface (CLI) game written in Ruby where two players can
 
 ## Features
 
-* Two modes:
+- Two modes:
 
-  * **2-Player mode**
-  * **Play against the computer**
-* Tracks scores for each player.
-* Shows ASCII art representation of Rock, Paper, and Scissors.
-* User-friendly terminal input prompts.
-* Tests implemented using **MiniTest**.
+  - **2-Player mode**
+  - **Play against the computer**
+
+- Tracks scores for each player.
+- Shows ASCII art representation of Rock, Paper, and Scissors.
+- User-friendly terminal input prompts.
+- Tests implemented using **MiniTest**.
 
 ---
 
@@ -21,8 +22,8 @@ A simple command-line interface (CLI) game written in Ruby where two players can
 
 ### Prerequisites
 
-* Ruby >= 3.0 installed
-* Git (optional for cloning repo)
+- Ruby >= 3.0 installed
+- Git (optional for cloning repo)
 
 ### Installation
 
@@ -31,6 +32,7 @@ A simple command-line interface (CLI) game written in Ruby where two players can
    ```bash
    git clone https://github.com/arsalanbardsiri/rock-paper-scissors.git
    ```
+
 2. Navigate to the project folder:
 
    ```bash
@@ -46,10 +48,12 @@ A simple command-line interface (CLI) game written in Ruby where two players can
    ```bash
    ruby app.rb
    ```
+
 2. Choose the game mode:
 
-   * Enter `1` for **2-Player**
-   * Enter `2` to play against the **computer**
+   - Enter `1` for **2-Player**
+   - Enter `2` to play against the **computer**
+
 3. Follow the prompts to enter your choice: `Rock`, `Paper`, or `Scissors`.
 4. After each round, scores are displayed.
 5. To play again, enter `P`; to quit, enter `Q`.
@@ -66,9 +70,9 @@ ruby -Itest test/test_game.rb
 
 Tests include:
 
-* Validating computer choices
-* Winner logic for both 2-player and vs-computer modes
-* Score tracking
+- Validating computer choices
+- Winner logic for both 2-player and vs-computer modes
+- Score tracking
 
 ---
 
@@ -91,12 +95,15 @@ rock-paper-scissors/
 
 ## Future Improvements
 
-* Add more game modes or best-of series.
-* Improve input validation for case-insensitive input.
-* Add a functional\_spec.md to outline user stories and functional requirements.
+- Add more game modes or best-of series.
+- Improve input validation for case-insensitive input.
+- Add a functional_spec.md to outline user stories and functional requirements.
 
 ---
 
 ## Author
 
 **Arsalan Bardsiri**
+
+#TODO:
+Looks good Arsalan. For a reach goal, try refactoring app.rb and game_play.rb logic in to classes. Maybe app.rp could just have 1 line (eg Game.new.run).

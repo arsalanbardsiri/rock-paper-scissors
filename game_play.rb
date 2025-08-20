@@ -1,14 +1,7 @@
 require_relative "select"
-
+require_relative "ascii"
 POSSIBILITIES = { "rock" => "scissors", "scissors" => "paper", "paper" => "rock" }
-VS = "
- _   _  ___   
-( ) ( )(  _`\ 
-| | | || (_(_)
-| | | |`\__ \ 
-| \_/ |( )_) |
-`\___/'`\____)
-"
+
 =begin
 Value system
 R > S
