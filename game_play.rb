@@ -1,4 +1,3 @@
-#game_play.rb
 require_relative "select"
 require_relative "ascii"
 
@@ -56,7 +55,7 @@ class Game
     puts "Player 1 #{OPTIONS[player_1_choice.to_sym]} "
     puts "Score of Playler 1: #{@player_1.score}"
     puts "#{VS}"
-    puts "Player 2 #{OPTIONS[player_1_choice.to_sym]}"
+    puts "Player 2 #{OPTIONS[player_2_choice.to_sym]}"
     puts "Score of #{vs_computer ? "Computer" : "Player 2"}: #{@player_2.score}"
   end
 
